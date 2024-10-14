@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXEMPLO 2</title>
+    <style>
+        body {
+            background-color: darkgray;
+            color: white;
+            font: normal 17pt Arial;
+        }
+
+        h1 {
+            color: darkslategray;
+        }
+
+        h2 {
+            text-align: center;
+            background-color: darkolivegreen;
+        }
+    </style>
+</head>
+<body>
+    <h2>Exemplo 2</h2>
+
+    <script>
+        // Formatando Número para String
+
+        var texto = "Javascript"
+        texto.toString()
+        window.alert(texto)
+
+        // Formantando Strings
+
+        var nome = window.prompt('Digite seu nome:')
+        document.write(`<h1>Olá ${nome}!</h1>`)
+        document.write("<br>")
+        document.write(`Seu nome tem ${nome.length} letras`)
+        document.write("<br>")
+        document.write("<br>")
+        document.write(`Seu nome em maiscúlas é ${nome.toUpperCase()}`)
+        document.write("<br>")
+        document.write("<br>")
+        document.write(`Seu nome em minuscúlas é ${nome.toLowerCase()}`)
+        document.write("<br>")
+        document.write("<br>")
+        // Formatando Números
+
+        var n1 = 1545.5
+        document.write(n1.toFixed(2))
+        document.write("<br>")
+        document.write("<br>")
+        document.write(n1.toFixed(2).replace('.' , ','))
+        document.write("<br>")
+        document.write("<br>")
+        document.write(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}))
+        document.write("<br>")
+        document.write("<br>")
+        document.write(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'}))
+        document.write("<br>")
+        document.write("<br>")
+        document.write(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'}))
+    </script>
+</body>
+</html>
